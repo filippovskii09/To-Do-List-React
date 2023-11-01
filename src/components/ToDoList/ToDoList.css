@@ -1,0 +1,28 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	flex: 1 1 auto;
+	overflow-y: scroll;
+	max-height: 600px;
+	padding-right: 10px;
+}
+::-webkit-scrollbar {
+	width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+	border-radius: 10px;
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+	background: #000; 
+	border-radius: 10px;
+ }
+ 
+ /* Handle on hover
+ ::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+ }	 */

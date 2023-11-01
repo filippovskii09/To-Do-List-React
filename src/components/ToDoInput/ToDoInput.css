@@ -1,0 +1,74 @@
+.input {
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	padding: 8px;
+	padding-left: 24px;
+	font-size: 16px;
+	outline: none;
+	height: 58px;
+	background: #40414f;
+	border: none;
+	color:#fff;
+	border-radius: 14px;
+	box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+.input-wrapper {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	@media (max-width: 425px){
+		width: 90%;
+	}
+}
+.input::placeholder {
+	color:#fff;
+	transition: all 0.3s ease 0s;
+}
+.input:hover::placeholder {
+	opacity: 0.5;
+}
+.input:focus {
+	transition: all 0.3s ease 0s;
+	box-shadow: 1px 1px 15px 8px rgba(0, 0, 0, 0.3);
+}
+.input:focus::placeholder {
+	opacity: 0;
+}
+.input__button {
+	position: absolute;
+	right: 25px;
+	color: #838383;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 10px;
+	@media (max-width: 425px){
+		right: 15px;
+	}
+}
+.input__button svg {
+	width: 18px;
+	height: 18px;
+}
+.active-button {
+	background: #39b939cf;
+	color: #fff;
+	cursor: pointer;
+}
+
+.list .input-wrapper {
+	margin: 5px auto;
+}
+.list .input__button {
+	width: 65px;
+}
+.list .input:focus {
+	transition: all 0.3s ease 0s;
+	box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.3);
+}

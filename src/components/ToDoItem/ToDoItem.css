@@ -1,0 +1,43 @@
+.item {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+.item__title {
+	font-size: 20px;
+	transition: all 0.3s ease 0s;
+}
+.item__actions {
+	display: flex;
+	gap: 20px;
+}
+.item__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	background-color:#000;
+	border-radius:50%;
+	cursor:pointer;
+	transition: all 0.3s ease 0s;
+}
+.item__button svg {
+	width: 20px;
+}
+.item__delete:hover {
+	transform: scale(1.05);
+	background: red;
+}
+.item__change:hover {
+	transform: scale(1.05);
+	background: green;
+}
+
+.done .item__title {
+	text-decoration: line-through;
+}
+.done {
+	opacity: 0.5;
+}
